@@ -43,5 +43,29 @@ public class DoorScript : MonoBehaviour
     private void SwitchTarget(){
       // Switch the currentTarget transform.
       currentTarget = (currentTarget == openTransform) ? closedTransform : openTransform;
+
+
+      // if (currentTarget == openTransform ){
+      //   currentTarget = closedTransform;
+      // } else {
+      //   currentTarget = openTransform;
+      // }
+
+      // if (true){
+      //   // Do something
+      // }
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
