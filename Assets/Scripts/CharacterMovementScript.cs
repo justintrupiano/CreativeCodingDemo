@@ -38,8 +38,5 @@ public class CharacterMovementScript : MonoBehaviour
       rigidbody.AddForce(velocity);
 
       velocity = new Vector3(0, 0, 0);
-
-
-
     }
 }
