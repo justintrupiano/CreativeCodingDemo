@@ -12,8 +12,6 @@ public class CharacterMovementScript : MonoBehaviour
     public float speed;
     private Rigidbody rigidbody;
 
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +21,9 @@ public class CharacterMovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      if (transform.position.y < -10f)
+        transform.position = new Vector3(10f, 2f, 0);
+
       if (Input.GetKey(KeyCode.W))
         velocity = new Vector3(speed, 0, 0);
 
